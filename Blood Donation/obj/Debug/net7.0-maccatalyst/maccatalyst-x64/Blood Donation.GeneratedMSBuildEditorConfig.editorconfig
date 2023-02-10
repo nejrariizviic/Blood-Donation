@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Blood_Donation
+build_property.ProjectDir = C:\Users\korisnik\source\repos\Blood Donation\Blood Donation\
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/DetailsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.DetailsView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\DetailsView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\DetailsView.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/EditProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.EditProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\EditProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\EditProfilePage.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/Home.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.Home.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Home.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Home.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/HomePageLogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.HomePageLogin.xaml
+build_metadata.AdditionalFiles.TargetPath = View\HomePageLogin.xaml
+build_metadata.AdditionalFiles.RelativePath = View\HomePageLogin.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/Location.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.Location.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Location.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Location.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/PasswordChange.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.PasswordChange.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PasswordChange.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PasswordChange.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/PhoneDialerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.PhoneDialerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PhoneDialerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PhoneDialerPage.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/PopUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.PopUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PopUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PopUpPage.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ProfilePage.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/Registration.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.Registration.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Registration.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Registration.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/Settings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.Settings.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Settings.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Settings.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/Share.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.Share.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Share.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Share.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/SharePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.SharePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SharePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SharePage.xaml
+
+[C:/Users/korisnik/source/repos/Blood Donation/Blood Donation/View/Ustanove.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Blood_Donation.View.Ustanove.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Ustanove.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Ustanove.xaml

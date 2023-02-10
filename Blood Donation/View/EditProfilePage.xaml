@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.EditProfilePage"
+             Title="Edit profile page"
+             Shell.BackgroundColor="#ab0218"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+            x:Name="imePrezime"
+            FontSize="35"
+            Margin="20,20,0,20"
+            FontFamily="sans-serif"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            
+            HorizontalOptions="Center" />
+
+
+            <Label Text="Name" Margin="20,0,0,0" />
+            <Entry x:Name="nameEntry" Margin="20,0,0,0" />
+            <BoxView WidthRequest="180" HorizontalOptions="StartAndExpand" Margin="20,-10,0,20" VerticalOptions="Center" Color="LightGray" HeightRequest="1"></BoxView>
+
+            <Label Text="Last name" Margin="20,0,0,0" />
+            <Entry x:Name="lastnameEntry" Margin="20,0,0,0" />
+            <BoxView WidthRequest="180" HorizontalOptions="StartAndExpand" Margin="20,-10,0,20" VerticalOptions="Center" Color="LightGray" HeightRequest="1"></BoxView>
+
+            <Label Text="Address" Margin="20,0,0,0" />
+            <Entry x:Name="addressEntry" Margin="20,0,0,0" />
+            <BoxView WidthRequest="180" HorizontalOptions="StartAndExpand" Margin="20,-10,0,20" VerticalOptions="Center" Color="LightGray" HeightRequest="1"></BoxView>
+
+            <Label Text="City" Margin="20,0,0,0" />
+            <Entry x:Name="cityEntry" Margin="20,0,0,0" />
+            <BoxView WidthRequest="180" HorizontalOptions="StartAndExpand" Margin="20,-10,0,20" VerticalOptions="Center" Color="LightGray" HeightRequest="1"></BoxView>
+
+            <Label Text="Email" Margin="20,0,0,0" />
+            <Entry x:Name="emailEntry" Margin="20,0,0,0"/>
+            <BoxView WidthRequest="280" HorizontalOptions="StartAndExpand" Margin="20,-10,0,20" VerticalOptions="Center" Color="LightGray" HeightRequest="1"></BoxView>
+
+            <Label x:Name="statusMessage" TextColor="#ab0218" FontSize="15" Margin="20,0,0,0" Text=""></Label>
+            <Button Text="Save" Background="#ab0218" CornerRadius="5" Margin="20,20,20,0" Clicked="OnSaveClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

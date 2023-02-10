@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.Ustanove"
+             Title="Ustanove"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#ab0218" StatusBarStyle="Default"/>
+    </ContentPage.Behaviors>
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="5"
+             
+            >
+            <Frame
+                   HeightRequest="48"
+                   BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                   BorderColor="Gray"
+                   CornerRadius="40"
+                   Padding="0,0,0,0"
+                   Margin="0,20,0,20"
+                   >
+                <HorizontalStackLayout Margin="10,0,20,0">
+               
+                    <SearchBar  Placeholder="Search nearby donor . . ." 
+                                PlaceholderColor="LightGray"
+                                TextChanged="SearchBar_TextChanged"
+                                TextColor="Black"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Margin="0,0,0,0"/>
+                    <Image Source="dblod.png"
+                           Margin="0,0,0,0"
+                           HeightRequest="28"></Image>
+                </HorizontalStackLayout>
+            </Frame>
+            <ListView x:Name="ListaUstanovaZaKrv"
+                      RowHeight="80"
+                      SeparatorColor="White"
+                      
+                      >
+                <ListView.ItemTemplate x:DataType="local:ListaUstanova"
+                                       >
+                    <DataTemplate >
+                        <ViewCell >
+                            <Grid>
+                                <Frame WidthRequest="380" 
+                                       CornerRadius="0" 
+                                       HeightRequest="67" 
+                                       Padding="0,0,0,0" 
+                                       BorderColor="White" 
+                                       BackgroundColor="#F5F5F5"
+                                       >
+
+                                    <HorizontalStackLayout Margin="25,10,0,10">
+                                        <Image
+                                         Source="{Binding Image}" 
+                                         HeightRequest="45"
+                                        WidthRequest="45"                        
+                                        />
+                                        <VerticalStackLayout >
+                                            <Label                                     
+                                                Text="{Binding Name}"
+                                                TextColor="Black"
+                                                HorizontalOptions="Start"
+                                                FontSize="18"                                               
+                                                FontAttributes="Bold"
+                                                Padding="15,0,0,2"
+                                                ></Label>
+                                            <Label
+                                                            Margin="15,0,0,5"
+                                                            Text="{Binding Location}"
+                                                            FontSize="14"
+                                                            TextColor="Grey"
+                                                            />
+                                        </VerticalStackLayout>
+                                        <HorizontalStackLayout>
+                                            <ImageButton  Source="call.png"
+                                                          Margin="82,0,0,0"
+                                                          Clicked="CallButton_Clicked"
+                                                          HeightRequest="20"                                                         
+                                                   ></ImageButton>
+                                            <ImageButton  Source="mess.png"
+                                                          Margin="-7,0,0,0"
+                                                          Clicked="ImageButton_Clicked"
+                                                          HeightRequest="22"                                                         
+                                                   ></ImageButton>
+
+                                        </HorizontalStackLayout>
+                                    </HorizontalStackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+  
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.Home"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White"
+             Title="Home">
+    
+    
+
+    <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                         Margin="0,15,0,0">
+        <HorizontalStackLayout Spacing="-95">
+
+            <VerticalStackLayout>
+                <Label Margin="50,50,100,0"
+            Text="Let's help to"        
+            FontSize="35"
+                   
+            VerticalOptions="Center"
+            FontFamily="sans-serif"
+            TextColor="Gray"
+            HorizontalOptions="Center" />
+        <Label Margin="-90,0,0,30"
+            Text="save a life!"        
+            FontSize="27"
+            FontFamily="sans-serif"           
+            VerticalOptions="Center" 
+            TextColor="#0EBFE9"
+            HorizontalOptions="CenterAndExpand" />
+            </VerticalStackLayout>
+            <Image Source="group.jpg" WidthRequest="150"></Image>
+        </HorizontalStackLayout>
+        <VerticalStackLayout Margin="0,30,0,0" Spacing="25">
+            <HorizontalStackLayout HorizontalOptions="Center">
+
+                <Frame 
+                HeightRequest="75"
+                WidthRequest="75"
+                HorizontalOptions="Center"
+                CornerRadius="120"
+                BorderColor="LightGray">
+                    <Button Text="A+"
+                            FontSize="Medium"
+                            FontFamily="sans-serif"
+                            TextColor="#ab2018"
+                            BackgroundColor="White"
+                            x:Name="button1"
+                            CornerRadius="60"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                             Clicked="Button1_MouseHover">
+                    </Button>
+                </Frame>
+
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="30,0,0,0"
+                    BorderColor="LightGray">
+                    <Button Text="O+"
+                            FontSize="Medium"
+                            FontFamily="sans-serif"
+                            TextColor="#ab2018"                        
+                            CornerRadius="60"
+                            BackgroundColor="White"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            x:Name="button2"
+                            Clicked="Button2_MouseHover">
+                    </Button>
+                </Frame>
+
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="30,0,0,0"
+                    BorderColor="LightGray">
+                    <Button Text="B+"
+                            FontSize="Medium"
+                            FontFamily="sans-serif"
+                            TextColor="#ab2018"                        
+                            CornerRadius="60"
+                            BackgroundColor="White"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            x:Name="button3"           
+                            Clicked="Button3_MouseHover">
+                    </Button>
+                </Frame>
+
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="0,0,0,0"
+                    BorderColor="LightGray">
+                    <Button x:Name="button4"
+                            Text="AB+"
+                            FontFamily="sans-serif"
+                            FontSize="Medium"
+                            TextColor="#ab2018" 
+                            BackgroundColor="White"
+                            CornerRadius="60"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            Clicked="Button4_MouseHover">
+                    </Button>
+                </Frame>
+
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="30,0,0,0"
+                    BorderColor="LightGray">
+                    <Button x:Name="button5"
+                            Text="B"
+                            FontSize="Medium"
+                            FontFamily="sans-serif"
+                            TextColor="#ab2018" 
+                            BackgroundColor="White"
+                            CornerRadius="60"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            Clicked="Button5_MouseHover">
+                    </Button>
+                </Frame>
+
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="30,0,0,0"
+                    BorderColor="LightGray">
+                    <Button x:Name="button6"
+                            Text="A-"
+                            FontSize="Medium"
+                            FontFamily="sans-serif"
+                            TextColor="#ab2018"
+                            BackgroundColor="White"
+                            CornerRadius="60"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            Clicked="Button6_MouseHover">
+                    </Button>
+                </Frame>
+
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="0,0,0,0"
+                    BorderColor="LightGray">
+                    <Button x:Name="button7"
+                            Text="O-"
+                            FontSize="Medium"
+                            FontFamily="sans-serif"
+                            TextColor="#ab2018" 
+                            BackgroundColor="White"
+                            CornerRadius="60"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            Clicked="Button7_MouseHover">
+                    </Button>
+                </Frame>
+
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="30,0,0,0"
+                    BorderColor="LightGray">
+                    <Button 
+                            x:Name="button8"
+                            Text="B-"
+                            FontSize="Medium"
+                        FontFamily="sans-serif"
+                            TextColor="#ab2018" 
+                            BackgroundColor="White"
+                            CornerRadius="60"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            Clicked="Button8_MouseHover">
+                    </Button>
+                </Frame>
+
+                <Frame 
+                    HeightRequest="75"
+                    WidthRequest="75"
+                    HorizontalOptions="Center"
+                    CornerRadius="120"
+                    Padding="0"
+                    Margin="30,0,0,0"
+                    BorderColor="LightGray">
+                    <Button x:Name="button9"
+                            Text="AB-"
+                            FontSize="Medium"
+                            FontFamily="sans-serif"
+                            TextColor="#ab2018"
+                            BackgroundColor="White"
+                            CornerRadius="60"
+                            HeightRequest="73"
+                            WidthRequest="73"
+                            Clicked="Button9_MouseHover">
+                    </Button>
+                </Frame>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        <Label Text="You can choose multiply options" FontFamily="sans-serif" 
+               FontAttributes="Italic" FontSize="16" TextColor="#d3d3d3"
+               HorizontalOptions="Center" Margin="0,60,0,0">
+            
+        </Label>
+        <Frame
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Center"
+            Margin="0,20,0,0"
+               HeightRequest="63"
+               WidthRequest="303"
+               CornerRadius="30"
+               
+               BorderColor="LightGray">
+            <Button HeightRequest="60"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    x:Name="btnSearch"
+                    Padding="0"             
+                    CornerRadius="30"
+                    WidthRequest="300"
+                    BorderColor="Gray"
+                    FontFamily="sans-serif"
+                    Text="Search"
+                    BackgroundColor="#ffffff"
+                    TextColor="Gray"
+                    FontSize="22"                   
+                    FontAttributes="None"
+                    Margin="0,0,0,1"
+                    Clicked="SearchButton_Clicked">
+            </Button>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

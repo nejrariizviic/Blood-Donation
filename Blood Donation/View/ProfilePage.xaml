@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.ProfilePage"
+             Title="                             My Profile"
+                       BackgroundColor="White"
+            Shell.BackgroundColor="#ab0218"
+             >
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Frame HeightRequest="250"
+               WidthRequest="410"                   
+               BorderColor="Transparent"
+               BackgroundColor="White"
+               HorizontalOptions="CenterAndExpand"              
+               >
+                <HorizontalStackLayout Spacing="30"
+                                       >
+
+                    <HorizontalStackLayout Spacing="20">
+                        <Border StrokeShape="RoundRectangle 80"
+                    Stroke="White"
+                    StrokeThickness="6"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    Margin="20,-50,0,0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                            <Image Aspect="AspectFill"
+                        HeightRequest="150"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Source="user.png"
+                                   x:Name="Image_Upload"
+                        WidthRequest="138"/>
+                        </Border>
+                        <ImageButton
+                     Source="ad.png" 
+                    HeightRequest="25"
+                    Clicked="UploadImage_Clicked"
+                    Margin="-90,65,0,0" />
+                    </HorizontalStackLayout>
+
+                    <VerticalStackLayout VerticalOptions="Center"
+                                         HorizontalOptions="Center"
+                                         Spacing="8"
+                                         Margin="-5,0,0,0">
+                        <HorizontalStackLayout>
+                            <Image Source="not.png"
+                       HeightRequest="23"
+                       Margin="140,-108,0,0"
+                       HorizontalOptions="End"
+                       ></Image>
+                        </HorizontalStackLayout>
+
+                        <Label x:Name="imePrezime"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               Margin="10,-20,0,0"
+                               FontFamily="serif"
+                               TextColor="Black"></Label>
+                        <VerticalStackLayout>
+                            <HorizontalStackLayout Spacing="8">
+                                <Image Source="loo.png"
+                                   HeightRequest="15"
+                                   Margin="-5,0,0,0"
+                                   ></Image>
+                                <Label Text="Travnik"
+                                       x:Name="cityUser"
+                               TextColor="Gray"
+                                   FontSize="12"
+                                   FontFamily="serif"></Label>
+                                <Image Source="check.png"
+                                   HeightRequest="15"
+                                   Margin="10,0,-3,0"
+                                   ></Image>
+                                <Label Text="Donor"
+                               TextColor="Gray"
+                                   FontSize="12"
+                                   FontFamily="serif"></Label>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout HorizontalOptions="Start"
+                                                   Margin="35,10,0,0"
+                                                   Spacing="5">
+                                <Image Source="ff.png"
+                                       WidthRequest="23"
+                                      ></Image>
+                                <Image Source="in.png"
+                                       WidthRequest="20"
+                                       ></Image>
+                                <Image Source="tt.png"
+                                       WidthRequest="23"
+                                       ></Image>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <HorizontalStackLayout Spacing="20"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Margin="0,-30,0,0">
+                <VerticalStackLayout>
+                    <Frame WidthRequest="80"
+                       HeightRequest="85"
+                       BackgroundColor="#ab2018"
+                       BorderColor="Transparent"
+                       CornerRadius="15">
+                        <Image Source="blood.png"
+                               HeightRequest="28"
+                               Margin="0,-30,0,0"></Image>
+
+                    </Frame>
+                    <Label x:Name="bloodgroupUser"
+                           TextColor="White"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="0,-38,0,0"
+                           FontAttributes="Bold"
+                           FontFamily="Arial"
+                           FontSize="15"></Label>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <Frame WidthRequest="80"
+                       HeightRequest="85"
+                       BackgroundColor="#ab2018"
+                       BorderColor="Transparent"
+                       CornerRadius="15">
+                        <Image Source="date.png"
+                               HeightRequest="28"
+                               Margin="0,-30,0,0"></Image>
+                    </Frame>
+                    <Label x:Name="dateOfdonation"
+                           TextColor="White"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="0,-38,0,0"
+                           FontAttributes="Bold"
+                           FontFamily="Arial"
+                           FontSize="12"></Label>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <Frame WidthRequest="80"
+                       HeightRequest="85"
+                       BackgroundColor="#ab2018"
+                       BorderColor="Transparent"
+                       CornerRadius="15">
+                        <Image Source="num.png"
+                               HeightRequest="28"
+                               Margin="0,-30,0,0"></Image>
+                    </Frame>
+                    <Label
+                           x:Name="numberOfDonations"
+                           TextColor="White"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="0,-38,0,0"
+                           FontAttributes="Bold"
+                           FontFamily="Arial"
+                           FontSize="15"></Label>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <Frame WidthRequest="80"
+                       HeightRequest="85"
+                       BackgroundColor="#ab2018"
+                       BorderColor="Transparent"
+                       CornerRadius="15">
+                        <Image Source="date.png"
+                               HeightRequest="28"
+                               Margin="0,-30,0,0"></Image>
+                    </Frame>
+                    <Label x:Name="dateOfNext"
+                           TextColor="White"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="0,-38,0,0"
+                           FontAttributes="Bold"
+                           FontFamily="Arial"
+                           FontSize="12"></Label>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+
+
+
+            <VerticalStackLayout Margin="0,80,0,60"
+                             Spacing="5"
+                                 HorizontalOptions="StartAndExpand"
+                                 VerticalOptions="Center">
+                <Border WidthRequest="370"
+                HeightRequest="300"
+                StrokeThickness="0"
+                BackgroundColor="White"
+                >
+                    <Border.Shadow>
+                        <Shadow Brush="White"
+                    Offset="15,15"
+                    Opacity=".1"></Shadow>
+                    </Border.Shadow>
+
+                </Border>
+
+                <VerticalStackLayout>
+                    <Border WidthRequest="200"
+                HeightRequest="50"
+                      
+                StrokeThickness="5"
+                BackgroundColor="#ab2018"
+                Stroke="transparent"
+                        HorizontalOptions="Start"
+                    Margin="20,-330,0,0">
+                        <Border.Shadow>
+                            <Shadow Brush="gray"
+                    Offset="20,25"
+                    Opacity=".1"></Shadow>
+                        </Border.Shadow>
+
+                        <Label Text="My personal info "
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontFamily="serif"
+                           FontSize="15"></Label>
+
+                    </Border>
+
+                    <HorizontalStackLayout>
+                        <VerticalStackLayout Spacing="11"
+                                         HorizontalOptions="StartAndExpand" Margin="30,10,0,0">
+                            <HorizontalStackLayout Spacing="23">
+                                <VerticalStackLayout  Spacing="3"
+                                                      >
+                                    <Label Text="E-mail: "
+                                           Margin="20,0,0,0"
+                                       HorizontalOptions="Center"
+                               TextColor="Gray"                                  
+                                   FontFamily="serif"
+                                   FontSize="11"
+                               ></Label>
+                                    <Label x:Name="placeForEmail"
+                                TextColor="Black"                                 
+                                   FontFamily="serif"
+                                   FontSize="13"
+                                   
+                                   ></Label>
+                                </VerticalStackLayout>
+
+
+                                <VerticalStackLayout Spacing="5">
+                                    <Label Text="Birthday: "
+                              TextColor="Gray" 
+                                           Margin="18,0,0,0"
+                                   FontFamily="serif"
+                                   FontSize="11"></Label>
+                                    <Label x:Name="placeForDate"
+                                TextColor="Black"                                 
+                                   FontFamily="serif"
+                                   FontSize="13"
+                                   ></Label>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+
+
+                            <HorizontalStackLayout Spacing="15">
+                                <VerticalStackLayout Spacing="5" Margin="35,0,0,0">
+                                    <Label Text="Gender: "
+                               TextColor="Gray"                                  
+                                   FontFamily="serif"
+                                   FontSize="11"></Label>
+                                    <Label x:Name="placeForGender"
+                               TextColor="Black"                                 
+                                   FontFamily="serif"
+                                   FontSize="13"></Label>
+                                </VerticalStackLayout>
+
+
+                                <VerticalStackLayout Spacing="5" Margin="30,0,0,0">
+                                    <Label Text="Phone: "
+                              TextColor="Gray"  
+                                   HorizontalOptions="Center"
+                                  
+                                   FontFamily="serif"
+                                   FontSize="11"></Label>
+                                    <Label x:Name="numberUser"
+                               TextColor="Black"                                 
+                                   FontFamily="serif"
+                                   FontSize="13"></Label>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Spacing="40">
+                                <VerticalStackLayout Spacing="5" Margin="25,0,0,0">
+                                    <Label Text="Address: "
+                              TextColor="Gray"  
+                                   HorizontalOptions="Center"
+                                   FontFamily="serif"
+                                   FontSize="11"></Label>
+                                    <Label x:Name="cityAndAddress"
+                               TextColor="Black"                                 
+                                   FontFamily="serif"
+                                   HorizontalOptions="Center"
+                                   FontSize="13"></Label>
+                                </VerticalStackLayout>
+
+                            </HorizontalStackLayout>
+
+                        </VerticalStackLayout>
+                        <Image Source="don.png"
+                                   Margin="20,-50,0,0"
+                                   HorizontalOptions="End"
+                                   WidthRequest="95"></Image>
+                    </HorizontalStackLayout>
+                    <VerticalStackLayout>
+
+
+                        <Label Text="History"
+                                   TextColor="LightGray"
+                           HorizontalOptions="Start"
+                                   Margin="60,-35,0,15"
+                           VerticalOptions="Center"
+                           FontAttributes="Bold"
+                           FontFamily="serif"
+                           FontSize="13"></Label>
+
+                        <Frame HeightRequest="267"
+                               WidthRequest="320"
+                               Padding="0"
+                               BorderColor="Transparent">
+                            <ListView x:Name="ListaUstanovaZaKrv"
+                      RowHeight="100"
+                      SeparatorColor="White"
+                      IsVisible="True"
+                      >
+                                <ListView.ItemTemplate x:DataType="local:DonationHistory"
+                                       >
+                                    <DataTemplate >
+                                        <ViewCell >
+                                            <Grid>
+                                                <Frame WidthRequest="320" 
+                                       CornerRadius="0" 
+                                       HeightRequest="67" 
+                                       Padding="0,0,0,0" 
+                                       BorderColor="White" 
+                                                       Margin="0,-30,0,0"
+                                       BackgroundColor="#F5F5F5"
+                                       >
+
+                                                    <HorizontalStackLayout Margin="20,10,0,10">
+                               
+                                                        <VerticalStackLayout >
+                                                                           
+                                               
+                                                            <Label
+                                                            Margin="15,0,0,5"
+                                                            Text="{Binding LokacijaName}"
+                                                            FontSize="14"
+                                                            TextColor="Grey"
+                                                               
+                                                            >
+                                                            </Label>
+                                                            <Label
+                                                               x:Name="ZadnjiDatumDarivanja"
+                                                            Margin="15,0,0,5"
+                                                            Text="{Binding DatumDarivanja}"
+                                                            FontSize="14"
+                                                            TextColor="Grey"
+                                                                 
+                                                            />
+                                                        </VerticalStackLayout>
+                                                    </HorizontalStackLayout>
+                                                </Frame>
+                                            </Grid>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Frame>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Spacing="5"
+                                         Margin="0,40,0,0">
+                        <Label Text="Statistics on blood donation"
+                           TextColor="Black"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="0,20,0,20"
+                           FontSize="17" 
+                          FontAttributes="Bold"
+                           FontFamily="serif"
+                           ></Label>
+                        <Image Source="statistika.png"
+                           HeightRequest="240"></Image>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             x:Class="Blood_Donation.View.PopUpPage"
+             CanBeDismissedByTappingOutsideOfPopup="False"
+                Size="380, 420">
+    <VerticalStackLayout BackgroundColor="White">
+        <Label 
+            Text="Blood Donation Application Link"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Black"
+            FontFamily="Serif"
+            FontSize="20"
+            FontAttributes="Bold"
+            Margin="0,20,0,20"/>
+
+        <VerticalStackLayout>
+            <Frame BorderColor="Transparent">
+                <Label Text="Copy this application link and share it with others so that as   many people as possible donate their blood and save a few lives ! ! !"
+                       TextColor="LightGray"
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="16"
+                       Margin="15,0,15,0"
+                       FontFamily="Serif"></Label>
+            </Frame>
+            <Label Text="Share link via:"
+                    TextColor="LightGray"
+                       FontSize="14"
+                    HorizontalTextAlignment="Start"
+                   Margin="37,0,0,10"
+                       FontFamily="Serif"
+                   ></Label>
+            <HorizontalStackLayout Spacing="15" Margin="0,0,0,20"
+                                   HorizontalOptions="Center">
+                <Image Source="fbb.png" HeightRequest="30"></Image>
+                <Image Source="ttt.png" HeightRequest="34"></Image>
+                <Image Source="inst.png" HeightRequest="34"></Image>
+                <Image Source="viber.png"
+                               HeightRequest="30"></Image>
+                <Image Source="wapp.png" HeightRequest="34"></Image>
+            </HorizontalStackLayout>
+
+            <Frame HeightRequest="50"
+                   WidthRequest="350"
+                   Padding="0"
+                   Margin="0,0,0,10"
+                   BorderColor="#F5F5F5"
+                   >
+                <HorizontalStackLayout>
+                    <Frame  HeightRequest="70"
+                            WidthRequest="75"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                             Padding="0"
+                            BackgroundColor="#ab2018"
+                           
+                            BorderColor="#F5F5F5">
+                        <HorizontalStackLayout VerticalOptions="Center"
+                                               HorizontalOptions="Start"
+                                               Margin="8,4,0,0"
+                                               Spacing="3">
+                            <Label  Text="Link "
+                                    TextColor="White"
+                                    FontAttributes="Bold"
+                                    FontSize="14"
+                                    Margin="5,0,0,0"
+                                   ></Label>
+                            <Image Source="link.png"
+                                   HeightRequest="20"
+                                   Margin="0,-3,0,0"
+                                   ></Image>
+                        </HorizontalStackLayout>
+                    </Frame>
+                    <Label Text="https://dribbble.com/shots/4697539/attachments/4697539-Blood-Donor-App?mode=media"
+                       TextColor="Blue"
+                       Margin="10,0,10,0"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="12"></Label>
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+
+
+
+        <Button Text="Close" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="12"
+                    Margin="0,0,0,0"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#ab2018"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+        </Button>
+    </VerticalStackLayout>
+</mct:Popup>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.Share"
+             Title="Share"
+             Shell.NavBarIsVisible="False"
+          BackgroundColor="#ab2018">
+
+
+    <VerticalStackLayout >
+        <VerticalStackLayout>
+            <Label Text="Share your"
+                   TextColor="White"
+                   HorizontalOptions="StartAndExpand"
+                   Margin="50,30,0,0"
+                   FontAttributes="Bold"                  
+                   FontSize="35"></Label>
+            <Label Text="location easily . . ."
+                   TextColor="LightGray"
+                   HorizontalOptions="StartAndExpand"
+                   Margin="60,0,0,0"
+                   FontFamily="Aral"
+                   FontSize="14"></Label>
+
+            <Image Source="slika.png"
+              Margin="0,-90,0,0"
+                   HeightRequest="570"></Image>
+            <Frame HeightRequest="400"
+                   CornerRadius="70"
+                   Margin="0,-42,0,0"
+                   BorderColor="LightGray"
+                   >
+                <VerticalStackLayout>
+                    <Label Text="       Share your location and 
+                           expand the application's users to 
+                          save as many lives as possible ! . . ."
+                       TextColor="Gray"
+                       Margin="55,9,0,0"
+                       FontSize="17"></Label>
+                    <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                        <Button BackgroundColor="#ab2018"
+                                Clicked="LookButton_Clicked"
+                                WidthRequest="100"
+                                Margin="0,20,0,0"
+                                Padding="-20,0,0,0"
+                                Text="Look"
+                                FontSize="17"
+                                TextColor="White"></Button>
+                        <Image Source="look.png"
+                              Margin="-35,20,0,0"                              
+                               HeightRequest="23"></Image>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

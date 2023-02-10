@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.Registration"
+             Title="Registration"
+               xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+              BackgroundColor="White"
+             Shell.BackgroundColor="#ab0218"
+
+             >
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#ab0218" StatusBarStyle="LightContent"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="formreg.jpg"
+               Margin="0,35,0,30"
+               WidthRequest="270">
+            </Image>
+            <VerticalStackLayout Margin="0,20,0,0">
+                <HorizontalStackLayout>
+                    <VerticalStackLayout>
+                        <Label
+                 Text="First name :"               
+                 FontFamily="Arial"
+                 TextColor="Black"
+                Margin="20,0,0,0">
+                        </Label>
+                        <Entry
+                x:Name="FirstName"
+                HeightRequest="60"
+                Margin="10,-15,20,0"
+                TextColor="Black"
+                PlaceholderColor="Gray"
+                FontSize="15"
+                WidthRequest="170"
+                Keyboard="Text">
+                        </Entry>
+                        <BoxView
+                    HeightRequest="1"
+                    Color="LightGray" 
+                    Margin="20,-10,30,15"
+                    WidthRequest="170">
+                        </BoxView>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Label
+                 Text="Last name :"                          
+                 TextColor="Black"
+                 FontFamily="Arial">
+                        </Label>
+                        <Entry
+                x:Name="LastName"
+                HeightRequest="60"
+                Margin="0,-15,0,0"
+                TextColor="Black"
+                FontSize="15"
+                Keyboard="Text"
+                            WidthRequest="170">
+                        </Entry>
+                        <BoxView
+                    HeightRequest="1"
+                    Color="LightGray" 
+                    Margin="0,-10,15,0"
+                            WidthRequest="170">
+                        </BoxView>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="0,0,20,5" HorizontalOptions="StartAndExpand">
+                <HorizontalStackLayout Margin="0,0,0,10">
+                    <Label
+            Text="DateBirth :"
+            FontFamily="Arial"
+            TextColor="Black"
+            Margin="20,10,0,14">
+                    </Label>
+                    <Frame WidthRequest="110" Padding="0,0,0,0" HeightRequest="33" Margin="5,-5,0,0" BorderColor="LightGrey">
+                        <DatePicker MinimumDate="01/01/1950"
+                                    x:Name="DateBirth"
+                            MaximumDate="12/31/2022"
+                            HorizontalOptions="Center"
+                            Date="02/02/2022" 
+                            TextColor="LightGray"
+                                FontFamily="Arial"
+                                Margin="0,-4,0,-5"/>
+                    </Frame>
+
+                    <Label
+            Text="Blood group :"
+            FontFamily="Arial"
+                    TextColor="Black"
+            Margin="17,10,0,0">
+                    </Label>
+                    <Frame WidthRequest="65" Padding="0,0,0,0" HeightRequest="33" Margin="10,-5,0,0" BorderColor="LightGray">
+                        <Picker x:Name="VrstaKrvi"  Margin="0,-2,0,-5" Title=" A+"  TextColor="Black" HorizontalTextAlignment="Center"
+                            WidthRequest="65" ItemDisplayBinding="{Binding VrsteKrviName}">
+                        </Picker>
+                    </Frame>
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Margin="0,10,0,0">
+                    <Label
+            Text="Gender :"
+            FontFamily="Arial"
+            TextColor="Black"
+            Margin="20,0,0,0">
+                    </Label>
+                    <Frame WidthRequest="63" Padding="0,0,0,0" HeightRequest="33" Margin="10,-25,0,0" BorderColor="LightGray">
+                        <Picker Title="M/F" Margin="0,0,0,-3" x:Name="Gender" ItemDisplayBinding="{Binding Vrsta}" TextColor="Black" HorizontalOptions="Center">
+                        </Picker>
+                    </Frame>
+                    <Label
+            Text="Contact No.:"
+            FontFamily="Arial"
+            TextColor="Black"
+            Margin="15,0,0,0">
+                    </Label>
+                    <VerticalStackLayout >
+                        <Entry
+                x:Name="ContactNumber"
+                HeightRequest="50"
+                Margin="10,-13,0,1"
+                TextColor="Black"
+                            MaxLength="13"
+                FontSize="15"
+                Keyboard="Telephone"
+                Placeholder="+387 6# ######"
+                WidthRequest="130">
+                        </Entry>
+                        <BoxView
+                    HeightRequest="1"
+                    Color="LightGray"
+                           HorizontalOptions="StartAndExpand"
+                    Margin="10,-11,0,15"
+                    WidthRequest="130">
+                        </BoxView>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label
+            Text="City :"
+            TextColor="Black"
+            FontFamily="Arial"
+            Margin="20,10,-10,14">
+                    </Label>
+                    <VerticalStackLayout>
+                        <Entry
+                x:Name="CityUser"
+                HeightRequest="50"
+                Margin="-2,-13,-30,0"
+                TextColor="Black"
+                FontSize="15"
+                Keyboard="Text"
+                Placeholder="Sarajevo"
+                WidthRequest="110">
+                        </Entry>
+                        <BoxView
+                    HorizontalOptions="StartAndExpand"
+                    HeightRequest="1"
+                    Color="LightGray"
+                    Margin="26,-5,0,0"
+                       WidthRequest="112" >
+                        </BoxView>
+                    </VerticalStackLayout>
+                    <Label
+            Text="Address :"
+            TextColor="Black"
+            FontFamily="Arial"
+            Margin="15,10,-10,14">
+                    </Label>
+                    <VerticalStackLayout>
+                        <Entry
+                x:Name="AddressUser"
+                HeightRequest="50"
+                Margin="-2,-13,-30,0"
+                TextColor="Black"
+                FontSize="15"
+                Keyboard="Text"
+                Placeholder="Street bb."
+                WidthRequest="110">
+                        </Entry>
+                        <BoxView
+                    HorizontalOptions="StartAndExpand"
+                    HeightRequest="1"
+                    Color="LightGray"
+                    Margin="26,-5,0,0"
+                       WidthRequest="112" >
+                        </BoxView>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout>
+
+                <Entry
+                x:Name="EmailSignUp"
+                HeightRequest="60"
+                Margin="20,-12,0,9"
+                TextColor="Black"
+                FontSize="15"
+                Keyboard="Email"
+                Placeholder="Email"
+                HorizontalOptions="StartAndExpand"
+                WidthRequest="370">
+                </Entry>
+                <BoxView
+                        HorizontalOptions="StartAndExpand"
+                    HeightRequest="1"
+                    Color="LightGray"
+                    Margin="20,-15,20,15">
+                </BoxView>
+
+
+                <Entry
+                IsPassword="True"
+                x:Name="PasswordSignUp"                
+                HeightRequest="60"
+                Margin="20,-18,20,0"
+                TextColor="Black"
+                FontSize="15"
+                Keyboard="Text"
+                    WidthRequest="370"
+                Placeholder="Password"
+                HorizontalOptions="StartAndExpand">
+                </Entry>
+                <BoxView
+                        HorizontalOptions="StartAndExpand"
+                    HeightRequest="1"
+                    Color="LightGray"
+                    Margin="20,-5,20,15">
+                </BoxView>
+
+                <Entry
+                        IsPassword="True"
+                x:Name="ConfirmPasswordSignUp"
+                HeightRequest="60"
+                Margin="20,-17,20,0"
+                TextColor="Black"
+                FontSize="15"
+                Keyboard="Text"
+                WidthRequest="370"
+                Placeholder="Confirm Password"
+                HorizontalOptions="StartAndExpand">
+                </Entry>
+                <BoxView
+                        HorizontalOptions="CenterAndExpand"
+                        HeightRequest="1"
+                        Color="LightGray"
+                        Margin="20,-5,20,5">
+                </BoxView>
+
+
+                <Label x:Name="statusMessage" HorizontalOptions="StartAndExpand" Margin="20,0,0,0" TextColor="#ab0218"></Label>
+                <Label x:Name="statusMessage2" HorizontalOptions="StartAndExpand" Margin="20,0,0,0" TextColor="#ab0218"></Label>
+    
+
+                <Button Text="Sign up"
+                FontSize="20"
+                BackgroundColor="#ab0218"
+                CornerRadius="10"
+                TextColor="White"
+                HeightRequest="60"
+                Clicked="SignUpButton_Clicked"
+                Margin="30">
+                </Button>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.SharePage"
+             Title="SharePage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <Label 
+            Text="View your location and "
+            TextColor="Gray"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="40,40,0,0"
+            FontAttributes="Bold"
+            FontSize="22"/>
+                    <Label 
+            Text="share it with others  . . .  "
+            TextColor="LightGray"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="40,0,0,0"           
+            FontSize="18"/>
+                    <Label 
+            Text="Notify others about your blood and application!"
+            TextColor="LightGray"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Margin="40,0,0,0"           
+            FontSize="11"/>
+                </VerticalStackLayout>
+                <Image Source="krv.jpg"
+                   HeightRequest="100"
+                   Margin="20,10,0,0"></Image>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center"
+                               Spacing="30"
+                               Margin="0,30,0,0">
+                <VerticalStackLayout>
+                    <Frame HeightRequest="180"
+                   WidthRequest="150"
+                   CornerRadius="30"
+                   BackgroundColor="#ab2018"
+                    BorderColor="Transparent">
+                        <Image Source="loc.png"
+                       HeightRequest="60"
+                      ></Image>
+                    </Frame>
+                    <Label Text="Location"
+                   FontAttributes="Bold"
+                       FontFamily="Times New Roman"
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="5,-40,0,0"></Label>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Frame HeightRequest="180"
+                   WidthRequest="150"
+                   CornerRadius="30"    
+                   BackgroundColor="#c70000"
+                   BorderColor="Transparent">
+                        <ImageButton Source="icc.png"
+                       HeightRequest="78"
+                       Margin="10,-10,0,0"
+                             Clicked="AppImageButton_Clicked"
+                      ></ImageButton>
+                    </Frame>
+                    <Label Text="App link"
+                       FontAttributes="Bold"
+                       FontFamily="Times New Roman"
+                   TextColor="White"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="5,-40,0,0"></Label>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout Margin="0,50,0,60"
+                             Spacing="5">
+                <Border WidthRequest="350"
+                HeightRequest="520"
+                StrokeThickness="1"
+                BackgroundColor="White"
+                Stroke="white">
+                    <Border.Shadow>
+                        <Shadow Brush="gray"
+                    Offset="20,25"
+                    Opacity=".5"></Shadow>
+                    </Border.Shadow>
+
+                </Border>
+
+
+                <Border WidthRequest="320"
+                HeightRequest="90"
+                StrokeThickness="5"
+                BackgroundColor="#ab2018"
+                Stroke="#ab2018"
+                    Margin="0,-500,0,0">
+                    <Border.Shadow>
+                        <Shadow Brush="gray"
+                    Offset="20,25"
+                    Opacity=".3"></Shadow>
+                    </Border.Shadow>
+                    <Image Source="infuzija.png"
+                       HeightRequest="60"
+                       WidthRequest="60"
+                       HorizontalOptions="Start"
+                       Margin="15,0,0,0"
+                     ></Image>
+
+                </Border>
+                <VerticalStackLayout>
+                    <Label Text="Blood Stock Low"
+                           TextColor="White"
+                           Margin="180,-75,0,0"></Label>
+                    <HorizontalStackLayout>
+                        <Image Source="blood.png"
+                           Margin="140,5,0,0"
+                           HeightRequest="30">
+                        </Image>
+                        <Label Text="O- Blood Group"
+                           Margin="7,15,0,0"
+                           FontSize="10"></Label>
+                        <HorizontalStackLayout>
+                            <Image Source="location.svg"
+                               HeightRequest="25"
+                               Margin="30,5,0,0"
+                              ></Image>
+                            <Label Text="Hospital"
+                               FontSize="10"
+                               Margin="6,15,0,0"></Label>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <Border WidthRequest="320"
+                HeightRequest="150"
+                StrokeThickness="10"
+                BackgroundColor="White"
+                Stroke="white">
+                    <Border.Shadow>
+                        <Shadow Brush="gray"
+                    Offset="20,25"
+                    Opacity=".3"></Shadow>
+                    </Border.Shadow>
+                    <Image Source="donacija.jpg"
+                       HeightRequest="105"                     
+                       HorizontalOptions="End"></Image>
+                </Border>
+                <VerticalStackLayout>
+                    <Label Text=" World Blood Donor Day "
+                       TextColor="Gray"
+                       FontSize="15"
+                       Margin="60,-120,0,0"
+                       FontAttributes="Bold"></Label>
+                    <Label Text="14 June 2023"
+                        TextColor="Gray"
+                       FontSize="13.5"
+                       Margin="75,10,0,0"
+                       ></Label>
+                    <Label Text="Donate your blood and 
+                       
+                       save someone's life ! . . ."
+                         TextColor="#ab2018"
+                       FontAttributes="Bold"
+                       FontSize="13.5"
+                       Margin="75,10,0,0"></Label>
+
+
+                </VerticalStackLayout>
+
+                <Border WidthRequest="320"
+                HeightRequest="150"
+                StrokeThickness="10"
+                BackgroundColor="White"
+                Stroke="white">
+                    <Border.Shadow>
+                        <Shadow Brush="gray"
+                    Offset="20,25"
+                    Opacity=".3"></Shadow>
+                    </Border.Shadow>
+                    <Image Source="sa.jpg"
+                       HeightRequest="105"                     
+                       HorizontalOptions="Start"></Image>
+                </Border>
+                <VerticalStackLayout>
+                    <Label Text=" Friendship through donations "
+                       TextColor="Gray"
+                       FontSize="15"
+                       Margin="140,-120,0,0"
+                       FontAttributes="Bold"></Label>
+                    <Label Text="be humanitarian"
+                        TextColor="Gray"
+                       FontSize="12"
+                       Margin="170,4,0,6"
+                       ></Label>
+                    <Label Text="Based on your location you 
+                           
+                           can see other humanitarians 
+                           
+                           in your area ! . . ."
+                         TextColor="#ab2018"
+                       FontAttributes="Bold"
+                       FontSize="13.5"
+                       Margin="170,-5,0,0"></Label>
+
+                    <HorizontalStackLayout HorizontalOptions="Center" 
+                                           HeightRequest="37"
+                                           Spacing="15"
+                                           Margin="10,42,0,0">
+                        <Image Source="fbb.png" HeightRequest="26"></Image>
+                        <Image Source="ttt.png" HeightRequest="31"></Image>
+                        <Image Source="inst.png" HeightRequest="30"></Image>
+                        <Image Source="viber.png"
+                               HeightRequest="30"></Image>
+                        <Image Source="wapp.png" HeightRequest="30"></Image>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

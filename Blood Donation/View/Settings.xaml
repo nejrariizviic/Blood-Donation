@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.Settings"
+             Title="Settings"
+               BackgroundColor="White"
+               Shell.BackgroundColor="#ab0218"
+             Shell.NavBarIsVisible="True">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <VerticalStackLayout
+                        HorizontalOptions="Center"
+                Margin="0,20,0,30">
+                <Frame HorizontalOptions="Center" CornerRadius="10" BorderColor="Transparent" WidthRequest="290">
+                    <HorizontalStackLayout BackgroundColor="White" Spacing="8">
+                        <RadioButton HorizontalOptions="Start" Content="Light Theme" FontFamily="sans-serif" TextColor="Gray">
+                        </RadioButton>
+                        <RadioButton  HorizontalOptions="End" Content="Dark Theme" FontFamily="sans-serif" TextColor="Gray" >
+                        </RadioButton>
+                        
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Frame HorizontalOptions="Center" CornerRadius="10" BorderColor="Transparent" WidthRequest="270">
+                    <HorizontalStackLayout BackgroundColor="White" Spacing="35" HorizontalOptions="Center">
+                        <Image Source="wtheme.jpg" HeightRequest="160" HorizontalOptions="CenterAndExpand"/>
+                        <Image Source="btheme.jpg"  HeightRequest="160" HorizontalOptions="CenterAndExpand" />
+                    </HorizontalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Frame WidthRequest="120"
+                   HeightRequest="40"
+                   BackgroundColor="#ab0218"
+                   BorderColor="Transparent"
+                       HorizontalOptions="Start"
+                   Padding="40,10,0,0"
+                 >
+                    <HorizontalStackLayout Margin="-20,0,0,0">
+                        <Image Source="iconch.png"
+                       Margin="0,-5,0,0"
+                       HeightRequest="20"></Image>
+                        <Label Text="Account"
+                               FontFamily="sans-serif"
+                   TextColor="White"                      
+                       Margin="6,0,0,0">
+                        </Label>
+
+                    </HorizontalStackLayout>
+                </Frame>
+                <Border WidthRequest="380"
+                HeightRequest="200"
+                StrokeThickness="2"
+                BackgroundColor="White"
+                Stroke="white"
+                   
+                   >
+                    <Border.Shadow>
+                        <Shadow Brush="lightgray"
+                    Offset="10,10"
+                    Opacity=".5"></Shadow>
+                    </Border.Shadow>
+                    <VerticalStackLayout Margin="0,20,0,10">
+
+
+                        <Frame HeightRequest="40"
+                   Padding="0"
+                   BorderColor="White"
+                           WidthRequest="350"
+                   >
+                            <HorizontalStackLayout HorizontalOptions="StartAndExpand">
+                                <Button Text="Edit profile"
+                                        BackgroundColor="White"
+                                        Padding="0"
+                                       Clicked="ImageButton_Clicked_1"
+                                       
+                        TextColor="Gray"
+                           FontFamily="sans-serif"
+                           FontSize="15"
+                                      
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                                    
+                          
+                       Margin="20,0,0,0"></Button>
+                                <ImageButton Source="rightsliider.png"
+                            HorizontalOptions="EndAndExpand"
+                                             Clicked="ImageButton_Clicked_1"
+                            VerticalOptions="Center"
+                                       Margin="179,0,0,0"
+                                       HeightRequest="30"
+                           ></ImageButton>
+                            </HorizontalStackLayout>
+
+                        </Frame>
+
+
+                        <Frame
+                            HeightRequest="40"
+                            Padding="0"
+                            BorderColor="White"
+                            WidthRequest="350">
+                            <HorizontalStackLayout HorizontalOptions="StartAndExpand">
+                                <Button Text="Change password"
+                        TextColor="Gray"
+                       HorizontalOptions="StartAndExpand"
+                                        BackgroundColor="White"
+                                        Padding="0"
+                                        Clicked="Button_Clicked_1"
+                       VerticalOptions="Center"
+                         FontFamily="sans-serif"
+                           FontSize="15"
+                       Margin="20,0,0,0"></Button>
+                                <ImageButton Source="rightsliider.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center"
+                          Margin="125,0,0,0"
+                                             Clicked="Button_Clicked_1"
+                           HeightRequest="30"
+                           ></ImageButton>
+                            </HorizontalStackLayout>
+                        </Frame>
+
+
+
+
+
+                        <Frame HeightRequest="40"
+                   Padding="8"
+                   BorderColor="White"
+                               VerticalOptions="Center"
+                               WidthRequest="350"
+                   >
+
+                            <HorizontalStackLayout >
+                                <Label Text="Your preferences"
+                        TextColor="Gray"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                         FontFamily="sans-serif"
+                           FontSize="15"
+                       Margin="14,0,0,0"></Label>
+                                <Image Source="rightsliider.png"
+                           Margin="165,0,0,0"
+                           HeightRequest="30"
+                           ></Image>
+                            </HorizontalStackLayout>
+
+                        </Frame>
+
+
+
+                        <Frame HeightRequest="40"
+                   Padding="8"
+                   BorderColor="White"
+                               WidthRequest="350"
+                               VerticalOptions="Center"
+                   >
+
+                            <HorizontalStackLayout >
+                                <Label Text="Notifications"
+                        TextColor="Gray"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                         FontFamily="sans-serif"
+                           FontSize="15"
+                       Margin="15,0,0,0"></Label>
+                                <Switch OnColor="#E55451"
+                                        
+                              ThumbColor="#ab0218"
+                              HeightRequest="30"
+                              Margin="175,0,0,0"/>
+                            </HorizontalStackLayout>
+
+
+                        </Frame>
+                    </VerticalStackLayout>
+
+
+                </Border>
+            </VerticalStackLayout>
+
+
+
+
+            <VerticalStackLayout Margin="0,30,0,0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                <Frame WidthRequest="150"
+                   HeightRequest="40"
+                   BackgroundColor="#ab0218"
+                   BorderColor="Transparent"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                   Padding="30,10,0,0"
+                  >
+                    <HorizontalStackLayout Margin="-20,0,0,0">
+                        <Image Source="settingsicon.png"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                       Margin="5,-10,0,0"
+                       HeightRequest="20"></Image>
+                        <Label Text="More settings"
+                   TextColor="White"
+                               FontFamily="sans-serif"
+                       Margin="6,0,0,0">
+                        </Label>
+
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Border WidthRequest="380"
+                HeightRequest="210"
+                StrokeThickness="1"
+                BackgroundColor="White"
+                Stroke="white">
+                    <Border.Shadow>
+                        <Shadow Brush="lightgray"
+                    Offset="10,10"
+                    Opacity=".5"></Shadow>
+                    </Border.Shadow>
+                    <VerticalStackLayout Margin="0,30,0,10">
+
+                        <Frame HeightRequest="40"
+                                Padding="8"
+                                BorderColor="White"
+                               WidthRequest="350"
+                               VerticalOptions="Center"
+                   >
+                            <HorizontalStackLayout >
+                                <Label Text="Privacy and Security"
+                        TextColor="Gray"
+                           FontFamily="sans-serif"
+                           FontSize="15"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                          
+                       Margin="20,0,0,0"></Label>
+                                <Image Source="rightsliider.png"
+                                           VerticalOptions="Center"
+                                            HorizontalOptions="End"
+                                           Margin="137,0,0,0"
+                           HeightRequest="30"
+                           ></Image>
+                            </HorizontalStackLayout>
+
+                        </Frame>
+
+
+                        <Frame HeightRequest="42"
+                                Padding="8"
+                                BorderColor="White"
+                               WidthRequest="350"
+                               VerticalOptions="Center"
+                   >
+
+                            <HorizontalStackLayout >
+                                <Label Text="Help and Support"
+                        TextColor="Gray"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                         FontFamily="sans-serif"
+                           FontSize="15"
+                       Margin="20,0,0,0"></Label>
+                                <Image Source="rightsliider.png"
+                           Margin="157,0,0,0"
+                           HeightRequest="30"
+                           ></Image>
+                            </HorizontalStackLayout>
+
+                        </Frame>
+
+
+                        
+                            <Frame HeightRequest="42"
+                                Padding="8"
+                                BorderColor="White"
+                               WidthRequest="350"
+                               VerticalOptions="Center"
+                   >
+                               
+                                    <HorizontalStackLayout >
+                                        <Label Text="Language"
+                        TextColor="Gray"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                         FontFamily="sans-serif"
+                           FontSize="15"
+                       Margin="20,0,0,0"></Label>
+                                        <Label Text="English"
+                                               TextColor="LightGray"                                              
+                                               VerticalOptions="Center"
+                                               FontFamily="sans-serif"
+                                               Margin="159,0,0,0">
+
+                                        </Label>
+                                        <Image Source="rightsliider.png"
+                                               VerticalOptions="Center"
+                           Margin="5,0,0,0"
+                           HeightRequest="30"
+                           ></Image>
+                                    </HorizontalStackLayout>
+
+                         
+                            </Frame>
+
+                        <Frame HeightRequest="42"
+                                Padding="8"
+                                BorderColor="White"
+                               WidthRequest="350"
+                               VerticalOptions="Center"
+                   >
+                            <HorizontalStackLayout >
+                                <Label Text="About"
+                        TextColor="Gray"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Center"
+                         FontFamily="sans-serif"
+                           FontSize="15"
+                       Margin="20,0,0,0"></Label>
+                                <Image Source="rightsliider.png"
+                                               VerticalOptions="Center"
+                           Margin="243,0,0,0"
+                           HeightRequest="30"
+                           ></Image>
+                            </HorizontalStackLayout>
+                        </Frame>
+
+                    </VerticalStackLayout>
+                </Border>
+                
+            </VerticalStackLayout>
+
+
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center"
+                                   >
+                <Button Text="Log Out"
+                       Clicked="Button_Clicked"
+                 
+                FontSize="Medium"
+                        FontFamily="sans-serif"
+                BackgroundColor="#ab0218"
+                CornerRadius="20"
+                    WidthRequest="150"
+                TextColor="White"
+                    Margin="0,20,0,20"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                HeightRequest="50"
+                
+                        
+                >
+
+                    <Button.Shadow>
+                        <Shadow Brush="LightGray"
+                    Offset="10,20"
+                    Opacity=".8"></Shadow>
+                    </Button.Shadow>
+
+                </Button>
+             
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.HomePageLogin"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             BackgroundColor="White"
+             Shell.BackgroundColor="#ab0218"
+             Shell.NavBarIsVisible="True">
+
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#ab0218" StatusBarStyle="LightContent"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="Images/mm.jpg"
+               Margin="0,45,0,10"
+               WidthRequest="400">
+            </Image>
+            <Label Text="Proceed with your"
+               Margin="30,30,0,0"
+               TextColor="Black"
+               FontSize="30"
+               FontFamily="sans-serif"
+               FontAttributes="Bold">
+            </Label>
+            <Label Text="Login"
+               FontSize="50"
+                   TextColor="Black"
+               FontFamily="sans"
+               FontAttributes="Bold"
+               Margin="30,-10,0,60">
+            </Label>
+            <VerticalStackLayout>
+                <Label
+                 Text="Email :"
+                 FontFamily="Arial"
+                 TextColor="Black"
+                 Margin="20,0,0,0">
+
+                </Label>
+                <Entry
+                x:Name="EmailUser"
+                HeightRequest="50"
+                Margin="-8,-2,0,0"
+                TextColor="Black"
+                Placeholder="example@gmail.com"
+                PlaceholderColor="Gray"
+                FontSize="15"
+                WidthRequest="350"
+                Keyboard="Email">
+                </Entry>
+                <BoxView
+                    HeightRequest="1"
+                    Color="LightGray" 
+                    Margin="20,-5,20,15">
+                </BoxView>
+            </VerticalStackLayout>
+
+            <Label
+            Text="Password :"
+             TextColor="Black"
+            FontFamily="Arial"
+            Margin="20,10,0,14">
+
+            </Label>
+            <Entry
+                IsPassword="True" 
+                x:Name="PasswordUser"
+                Margin="10,-15,0,5"
+                TextColor="Black"
+                Placeholder="************"
+                PlaceholderColor="Gray"
+                FontSize="15"
+                WidthRequest="370"
+                Keyboard="Text">
+            </Entry>
+            <BoxView
+                    HeightRequest="1"
+                    Color="LightGray" 
+                    Margin="20,-10,20,15">
+            </BoxView>
+            <HorizontalStackLayout>
+                <Label Text="Don't have account?"
+                       TextColor="Black"
+                       Margin="20,0,0,0"
+                       >
+                </Label>
+                <Button Text="Sign up here"
+                        TextColor="#ab0218"
+                        FontAttributes="Bold"
+                        Padding="0,0,0,0"
+                        Clicked="RegistrationButton_Clicked"
+                        HeightRequest="40"
+                        BackgroundColor="White"
+                        FontSize="15"
+                        Margin="10,-10,0,0">
+                </Button>
+                
+            </HorizontalStackLayout>
+
+            <Label Text="" x:Name="StatusMessage" TextColor="Red" HorizontalOptions="StartAndExpand"
+                   FontSize="15" FontFamily="sans-serif" Margin="20,0,0,0">
+                
+            </Label>
+            
+            <Button Text="Login"
+                FontSize="20"
+                BackgroundColor="#ab0218"
+                CornerRadius="10"
+                TextColor="White"
+                HeightRequest="60"
+                    Clicked="Button_Clicked"
+                             
+                Margin="25,10,25,25">
+            </Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

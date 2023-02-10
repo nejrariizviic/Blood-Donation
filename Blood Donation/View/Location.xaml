@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Blood_Donation.View.Location"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             Title="Location"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#ab0218" StatusBarStyle="LightContent"/>
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout>
+
+        <VerticalStackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+            Margin="0,20,0,0">
+            <Frame 
+                   HeightRequest="48"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   BackgroundColor="#FAFAFA"
+                   BorderColor="DarkGray"
+                
+                   CornerRadius="40"
+                   Padding="0,0,0,0">
+                <HorizontalStackLayout VerticalOptions="Center"
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="0"
+                                       Margin="10,0,20,0">
+            
+                    <SearchBar  Placeholder="Search the nearest donor in your area" 
+                                PlaceholderColor="LightGray"
+                                TextChanged="SearchBar_TextChanged"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                FontFamily="sans-serif"
+                                TextColor="Black"
+                                Margin="0,0,0,0"/>
+                    <Image Source="iconsearch.png"
+                           HeightRequest="28" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"></Image>
+
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+        <ListView x:Name="ListaDonatora"
+                      RowHeight="80"
+                  Margin="0,20,0,0"
+                      SeparatorColor="#ab2018"
+                  HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="Center"
+                      >
+            <ListView.ItemTemplate x:DataType="local:User">
+                <DataTemplate >
+                    <ViewCell >
+                        <Grid>
+                            <Frame WidthRequest="380" CornerRadius="15" HeightRequest="70" 
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="Center"
+                                       Padding="0,0,0,0" 
+                                       BorderColor="White"
+                                       
+                                       
+                                       >
+
+                                <HorizontalStackLayout Margin="25,10,0,10" HorizontalOptions="CenterAndExpand"
+                                                       VerticalOptions="Center">
+                                    <Image
+                                         Source="{Binding Image}" 
+                                         HeightRequest="45"
+                                        WidthRequest="45"                        
+                                        />
+                                    <VerticalStackLayout >
+                                        <Label                                     
+                                                Text="{Binding Name}"
+                                                TextColor="Black"
+                                                HorizontalOptions="Start"
+                                                FontSize="18"
+                                               FontFamily="sans-serif"
+                                                FontAttributes="Bold"
+                                                Padding="15,0,0,2"
+                                                ></Label>
+                                        <Label
+                                                            Margin="15,0,0,5"
+                                                            Text="{Binding Email}"
+                                                            FontSize="14"
+                                            FontFamily="sans-serif"
+                                                            TextColor="Grey"
+                                                            />
+                                    </VerticalStackLayout>
+                                    <HorizontalStackLayout>
+                                        <ImageButton  Source="info.png"
+                                                           Margin="90,0,0,0"
+                                                           HeightRequest="32"
+                                                           Clicked="ImageButton_Clicked"
+                                                   ></ImageButton>
+                                    </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

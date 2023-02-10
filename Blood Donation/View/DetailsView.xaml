@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Blood_Donation.ViewModels"
+             xmlns:models="clr-namespace:Blood_Donation.Moduli"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:DataType="viewModels:DetailsViewModels"
+             x:Class="Blood_Donation.DetailsView"
+             Title="Daruj krv"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="White">
+
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="White" StatusBarStyle="LightContent"/>
+    </ContentPage.Behaviors>
+    
+    
+    <StackLayout Margin="0,20,0,0"  >
+        <CarouselView Grid.Row="0" Position="{Binding Position}"
+            IndicatorView="Indicator" Loop="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Details}">
+            <CarouselView.ItemTemplate>
+                <DataTemplate x:DataType="models:DetailsModel">
+                    <Grid RowDefinitions="5*,10*">
+                        <Image Source="{Binding DetailImage}" Aspect="AspectFit" Grid.Row="0" HeightRequest="400" WidthRequest="400" Margin="0,300,0,40"/>
+
+                        <VerticalStackLayout Margin="0,400,0,0">
+
+                            <Label Text="{Binding DetailTitle}" FontSize="35" FontAttributes="Bold" FontFamily="serif" TextColor="Black" BackgroundColor="White" Margin="0,45,0,0" HorizontalOptions="CenterAndExpand"></Label>
+
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Margin="0,480,0,0">
+
+                            <Label Text="{Binding DetailDescription}" FontSize="16" TextColor="Gray" HorizontalOptions="Center" Margin="0,35,7,0" FontFamily="serif"></Label>
+
+                        </VerticalStackLayout>
+
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="0" Margin="0,0,0,45">
+
+            <Frame x:Name="Previous" HorizontalOptions="Start"              
+                   Padding="0"
+                   CornerRadius="15"
+                   HeightRequest="60"
+                   
+                  Margin="-20,0,0,20"
+                   WidthRequest="120"         
+                   BackgroundColor="#ab0218"
+                   BorderColor="Transparent">
+                <Label Text="{Binding ButtonPrew}" TextColor="White"
+                       FontSize="15" 
+                       FontAttributes="Bold"
+                       FontFamily="Arial"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       x:Name="PrevBtn"></Label>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding PreviousCommand}"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <IndicatorView  x:Name="Indicator" Margin="65,25,60,0" IndicatorSize="10" IndicatorColor="#ab0218" SelectedIndicatorColor="{x:StaticResource Gray100}" HorizontalOptions="Center"></IndicatorView>
+
+            <Frame HorizontalOptions="End"              
+                   Padding="0"
+                   CornerRadius="15"
+                   HeightRequest="60"
+                  Margin="10,0,0,20"
+                   WidthRequest="120"         
+                   BackgroundColor="#ab0218"
+                   BorderColor="Transparent">
+                <Label Text="{Binding ButtonText}" TextColor="White"
+                       FontSize="15" 
+                       FontAttributes="Bold"
+                       FontFamily="Arial"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"></Label>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NextCommand}"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
