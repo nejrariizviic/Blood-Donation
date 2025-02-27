@@ -2,7 +2,7 @@
 
 The mobile application for blood donors is an innovative project that aims to facilitate the process of donating blood through technology. This application is intended for blood donors as well as blood collection organizations to create better communication, increase awareness of the importance of blood donation and improve the overall donation process.
 
-### Key features of the app include:
+## Key features of the app include:
 
 - Donor registration: The application allows users to register as blood donors. Donors will provide their personal information, such as blood type, previous blood donations and availability for donation.
 
