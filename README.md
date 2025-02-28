@@ -2,18 +2,61 @@
 
 The mobile application for blood donors is an innovative project that aims to facilitate the process of donating blood through technology. This application is intended for blood donors as well as blood collection organizations to create better communication, increase awareness of the importance of blood donation and improve the overall donation process.
 
-## Key features of the app include:
 
-- Donor registration: The application allows users to register as blood donors. Donors will provide their personal information, such as blood type, previous blood donations and availability for donation.
+## Project Overview
+The design and development of the Blood Donation app focused on simplicity, clarity, and accessibility. The application was built to be lightweight, without excessive or overly complex features, ensuring that users of all technical skill levels can easily navigate and use it. The interface is intuitive, with clear instructions and minimal steps required for registration, donation scheduling, and receiving notifications. The goal was to create an app that is not only functional but also approachable for individuals who may not be very tech-savvy, making it accessible to a wide range of users.
 
-- Donation Need Notifications: The app will allow blood collection organizations to post real-time donation need notifications. Users will receive notifications about local events, emergencies or shortages of certain blood types.
+#### User Roles
+- Donor: The primary user role, allowing individuals to register, schedule donations, receive notifications, and track their donation history.
+- Blood Collection Organization: These users manage donation campaigns, publish real-time donation needs, and track donor availability.
+- Admin: Oversees the overall operation of the app, including managing user roles, monitoring activity, and ensuring smooth functionality.
 
-- Donor Locating: Using GPS technology, the app will be able to locate nearby donors and notify them of urgent donation needs in their area. This will allow donors to respond more quickly and ensure the availability of fresh blood in emergency situations.
+## User Flow Overview
 
-- Donation Reminders: The app will provide reminders to donors about upcoming blood donation appointments. This will help maintain continuity of donation and ensure a constant supply of blood.
+- The donor begins by registering, creating a profile with personal details, blood type, donation history, and availability for future donations.
 
-- Donation tracking and feedback: Donors will be able to track their donation history in the app and get feedback on how their blood was used.
+- Upon registration, the donor receives notifications about urgent donation needs published by blood collection organizations.
 
-- Educational content: The application will provide information about the health conditions for donation, the benefits of donation, the use of the application and other related topics. This will help raise awareness of the importance of donating blood and remove barriers and fears that people may have.
+- The app utilizes GPS functionality to identify nearby donors and sends real-time notifications regarding critical donation needs in the surrounding area.
 
-A mobile application for blood donors has the potential to significantly improve the blood donation process, increase the number of donations and ensure the availability of blood in emergency situations. The combination of technology and humanity allows donors to be connected and informed about their contribution to saving lives.
+- The donor then schedules an appointment for blood donation, selecting an available time slot within the app.
+
+- Automated reminders are sent to the donor, informing them about their upcoming donation appointments.
+
+- After completing the donation, the donor can track their donation history and receive feedback on how their blood was utilized.
+
+- Additionally, the donor can access educational content provided within the app, which includes information on the health benefits of blood donation, as well as resources to help raise awareness and alleviate concerns surrounding the donation process.
+
+This overview illustrates the comprehensive journey a donor takes within the app, ensuring a streamlined, user-friendly experience throughout their engagement with the platform.
+
+## Technologies
+- .NET MAUI - used to develop a cross-platform mobile application, 
+- SQLite - used for local data storage, allowing efficient management of user data such as donation history and registration details
+- Adobe Photoshop - used for designing and editing images and assets
+
+
+## Key Features
+- Donor:
+  - Register and create a user profile with personal details, blood type, and donation history.
+  - Schedule future blood donations.
+  - Receive real-time notifications about urgent donation needs and local donation events.
+  - Track donation history and see how their blood has been used.
+  - Get reminders for upcoming donation appointments.
+  - Access educational content about blood donation and health tips.
+
+- Blood Collection Organization:
+  - Publish real-time notifications about urgent donation needs in the area.
+  - Organize and manage donation events.
+  - Track the availability of registered donors.
+  - Send notifications to users regarding local donation events or emergencies.
+  - Monitor donor history and engagement for better campaign management.
+
+- Admin:
+  - Manage user roles (donors, organizations).
+  - Oversee the overall operation and functionality of the app.
+  - Ensure smooth operation of donation scheduling, notifications, and data management.
+  - Monitor app performance and user engagement.
+  - Review and approve donation events and notifications.
+
+
+
