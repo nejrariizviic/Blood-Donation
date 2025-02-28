@@ -3,6 +3,13 @@
 The mobile application for blood donors is an innovative project that aims to facilitate the process of donating blood through technology. This application is intended for blood donors as well as blood collection organizations to create better communication, increase awareness of the importance of blood donation and improve the overall donation process.
 
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [User Flow Overview](#user-flow-overview)
+- [Technologies](#technologies)
+- [Key Features](#key-features)
+- [Future Improvements](#future-improvements)
+
 ## Project Overview
 The design and development of the Blood Donation app focused on simplicity, clarity, and accessibility. The application was built to be lightweight, without excessive or overly complex features, ensuring that users of all technical skill levels can easily navigate and use it. The interface is intuitive, with clear instructions and minimal steps required for registration, donation scheduling, and receiving notifications. The goal was to create an app that is not only functional but also approachable for individuals who may not be very tech-savvy, making it accessible to a wide range of users.
 
@@ -14,17 +21,11 @@ The design and development of the Blood Donation app focused on simplicity, clar
 ## User Flow Overview
 
 - The donor begins by registering, creating a profile with personal details, blood type, donation history, and availability for future donations.
-
 - Upon registration, the donor receives notifications about urgent donation needs published by blood collection organizations.
-
 - The app utilizes GPS functionality to identify nearby donors and sends real-time notifications regarding critical donation needs in the surrounding area.
-
 - The donor then schedules an appointment for blood donation, selecting an available time slot within the app.
-
 - Automated reminders are sent to the donor, informing them about their upcoming donation appointments.
-
 - After completing the donation, the donor can track their donation history and receive feedback on how their blood was utilized.
-
 - Additionally, the donor can access educational content provided within the app, which includes information on the health benefits of blood donation, as well as resources to help raise awareness and alleviate concerns surrounding the donation process.
 
 This overview illustrates the comprehensive journey a donor takes within the app, ensuring a streamlined, user-friendly experience throughout their engagement with the platform.
@@ -57,6 +58,7 @@ This overview illustrates the comprehensive journey a donor takes within the app
   - Ensure smooth operation of donation scheduling, notifications, and data management.
   - Monitor app performance and user engagement.
   - Review and approve donation events and notifications.
+
 
 ## Future Improvements
 Some of the key future improvements include:
