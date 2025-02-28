@@ -6,7 +6,7 @@ The mobile application for blood donors is an innovative project that aims to fa
 ## Project Overview
 The design and development of the Blood Donation app focused on simplicity, clarity, and accessibility. The application was built to be lightweight, without excessive or overly complex features, ensuring that users of all technical skill levels can easily navigate and use it. The interface is intuitive, with clear instructions and minimal steps required for registration, donation scheduling, and receiving notifications. The goal was to create an app that is not only functional but also approachable for individuals who may not be very tech-savvy, making it accessible to a wide range of users.
 
-#### User Roles
+### User Roles
 - Donor: The primary user role, allowing individuals to register, schedule donations, receive notifications, and track their donation history.
 - Blood Collection Organization: These users manage donation campaigns, publish real-time donation needs, and track donor availability.
 - Admin: Oversees the overall operation of the app, including managing user roles, monitoring activity, and ensuring smooth functionality.
