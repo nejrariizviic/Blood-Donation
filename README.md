@@ -12,8 +12,9 @@ The mobile application for blood donors is an innovative project that aims to fa
 </p>
 
 ## List of institutions for blood donation
-![List](https://raw.githubusercontent.com/nejrariizviic/Blood-Donation/refs/heads/main/Uploads/donator.png)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nejrariizviic/Blood-Donation/refs/heads/main/Uploads/donator.png" alt="List">
+</p>
 
 
 ## Table of Contents
