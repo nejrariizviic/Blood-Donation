@@ -75,7 +75,12 @@ This overview illustrates the comprehensive journey a donor takes within the app
   - Review and approve donation events and notifications.
 
 ## Usage Guidelines
-
+Follow these steps to download and run the application:
+ 1. Clone the Repository
+ 2. Open the .sln project file in Visual Studio 2022
+ 3. If you are using SQLite, ensure that the Microsoft.Data.Sqlite package is installed via NuGet Package Manager
+ 4. In Visual Studio, select the target platform (Android, Windows, iOS)
+ 5. Click "Run" or press F5 to start the application.
 
 
 ## Future Improvements
