@@ -22,6 +22,7 @@ The mobile application for blood donors is an innovative project that aims to fa
 - [User Flow Overview](#user-flow-overview)
 - [Technologies](#technologies)
 - [Key Features](#key-features)
+- [Usage Guidelines](#usage-guidelines)
 - [Future Improvements](#future-improvements)
 
 ## Project Overview
@@ -72,6 +73,9 @@ This overview illustrates the comprehensive journey a donor takes within the app
   - Ensure smooth operation of donation scheduling, notifications, and data management.
   - Monitor app performance and user engagement.
   - Review and approve donation events and notifications.
+
+## Usage Guidelines
+
 
 
 ## Future Improvements
