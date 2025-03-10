@@ -76,10 +76,10 @@ This overview illustrates the comprehensive journey a donor takes within the app
 
 ## Usage Guidelines
 Follow these steps to download and run the application:
-- Clone the Repository
-- Open the .sln project file in Visual Studio 2022
-- If you are using SQLite, ensure that the Microsoft.Data.Sqlite package is installed via NuGet Package Manager
-- In Visual Studio, select the target platform (Android, Windows, iOS)
+- Clone the Repository,
+- Open the .sln project file in Visual Studio 2022,
+- If you are using SQLite, ensure that the Microsoft.Data.Sqlite package is installed via NuGet Package Manager,
+- In Visual Studio, select the target platform (Android, Windows, iOS),
 - Click "Run" or press F5 to start the application.
 
 
