@@ -1,6 +1,7 @@
 # Blood Donation
 
 The mobile application for blood donors is an innovative project that aims to facilitate the process of donating blood through technology. This application is intended for blood donors as well as blood collection organizations to create better communication, increase awareness of the importance of blood donation and improve the overall donation process.
+
 ## Application logo
 <p align="center">
   <img src="https://raw.githubusercontent.com/nejrariizviic/Blood-Donation/refs/heads/main/Uploads/logo.png" alt="Logo">
